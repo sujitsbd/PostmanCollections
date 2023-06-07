@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "719ebb0a-7252-4ea5-ad3f-af1d28520c84",
+		"name": "Operations about user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create with Array",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "084343cd-b3e4-4be0-aa0f-3cd92af78808",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ok\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d74fc12a-5fa7-47b4-955c-a01041cf6fff",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "5df28257-010c-4f72-8629-9f538579b760",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"user1\",\n    \"firstName\": \"user\",\n    \"lastName\": \"1\",\n    \"email\": \"sujits.bd@gmail.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01723404174\",\n    \"userStatus\": 0\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/createWithArray"
+			},
+			"response": []
+		},
+		{
+			"name": "Create With List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "760c8d17-b5c8-454d-b71a-13c2c221e07a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ok\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "cfceb993-628b-4cd1-a4bf-59e4f6806fa2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"user2\",\n    \"firstName\": \"user\",\n    \"lastName\": \"2\",\n    \"email\": \"sujit.sqae@gmail.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01672744455\",\n    \"userStatus\": 0\n  }\n]\n\n",
+					"options": {}
+				},
+				"url": "{{URL}}/createWithList"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by user name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ba44b9bf-a324-4f89-b8c7-a17cc39e7c9b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "1b1171ca-50ef-4eca-9b26-20701aba58a7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/user1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"user1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7f387de-c59a-41fb-aef1-2e0fad24f813",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "173c5c9f-9139-4c49-b9e9-ad0ad8c274ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"phone\": \"123456789\"\n}",
+					"options": {}
+				},
+				"url": "{{URL}}/user1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5385d830-5a42-4d89-becc-b4e44031763b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "ebb473a4-52df-498d-83ee-18869b0068bc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{URL}}/user1"
+			},
+			"response": []
+		},
+		{
+			"name": "Log in user into the system",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "55c986d3-d2df-46b2-8013-b3d8c6a68831",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"logged in user session\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "08023e8c-78ec-47fd-bb64-f1de14587e90",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/login?username=user1&password=1234",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user1"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout current logged in user session",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2d0c936c-b14b-483a-a90d-255781b45bdc",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "b0c6ae43-e94b-4b83-9ce0-4d5a882f1e25",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57adfa5f-1a33-4360-aeaa-28fb9656f6e6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "e17ec671-e2e7-4477-ba9f-850d11a884e3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"username\": \"Sujits\",\n  \"firstName\": \"Sujit\",\n  \"lastName\": \"sarker\",\n  \"email\": \"ss@gmail.com\",\n  \"password\": \"123456\",\n  \"phone\": \"123456789\",\n  \"userStatus\": 0\n}",
+					"options": {}
+				},
+				"url": "{{URL}}"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "48270da0-f2cd-4031-9eca-104803c14b9c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "16d237f5-31b5-4493-950c-a12573db56c0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a77f9c13-e818-4c90-b364-28eff9d5341c",
+			"key": "URL",
+			"value": "https://petstore.swagger.io/v2/user",
+			"type": "string"
+		},
+		{
+			"id": "d6d8d529-48fa-4ddc-8084-1a14656487c6",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
