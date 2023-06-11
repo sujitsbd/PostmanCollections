@@ -84,8 +84,8 @@
 							"",
 							"pm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.json.type).to.eql(\"unknown\");",
-							"    pm.expect(jsonData.json.message).to.eql(\"ok\");",
+							"    pm.expect(jsonData.type).to.eql(\"unknown\");",
+							"    pm.expect(jsonData.message).to.eql(\"ok\");",
 							"});"
 						],
 						"type": "text/javascript"
@@ -509,13 +509,13 @@
 	],
 	"variable": [
 		{
-			"id": "a961b369-d18e-438d-85e5-bd2fec59f84d",
+			"id": "f862ad76-00fa-4988-aa2f-377252d4c74c",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "2c883778-7066-4d43-9fb5-019a9c6e193b",
+			"id": "4cbffd4b-ca3c-4392-a7ea-907ac121e206",
 			"value": "",
 			"type": "string",
 			"disabled": true
