@@ -83,24 +83,10 @@
 							"});",
 							"",
 							"pm.test(\"Your test name\", function () {",
-							"    const response = pm.response.json();",
-							"    pm.expect(response.json.username).to.eql(pm.iterationData.get(\"username\"));",
-							"});",
-							"",
-							"/* pm.test(\"Verifying user\", function () {",
-							"    var response = pm.response.json();",
-							"    pm.expect(response.username).to.eql(pm.iterationData.get(\"username\"));",
-							"    pm.expect(response.firstName).to.eql(pm.iterationData.get(\"firstName\"));",
-							"    pm.expect(response.lastName).to.eql(pm.iterationData.get(\"lastName\"));",
-							"    pm.expect(response.email).to.eql(pm.iterationData.get(\"email\"));",
-							"    pm.expect(response.password).to.eql(pm.iterationData.get(\"password\"));",
-							"    pm.expect(response.phone).to.eql(pm.iterationData.get(\"phone\"));",
-							"    ",
-							"    ",
-							"});*/",
-							"",
-							"",
-							""
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.json.type).to.eql(\"unknown\");",
+							"    pm.expect(jsonData.json.message).to.eql(\"ok\");",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -523,13 +509,13 @@
 	],
 	"variable": [
 		{
-			"id": "188d80e3-c004-4883-91c9-67ff48703e97",
+			"id": "a961b369-d18e-438d-85e5-bd2fec59f84d",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "ace61a89-698f-4f04-b09e-6a69a3ebdc9c",
+			"id": "2c883778-7066-4d43-9fb5-019a9c6e193b",
 			"value": "",
 			"type": "string",
 			"disabled": true
