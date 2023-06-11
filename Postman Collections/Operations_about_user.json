@@ -35,7 +35,7 @@
 					}
 				}
 			],
-			"_postman_id": "5df28257-010c-4f72-8629-9f538579b760",
+			"id": "5df28257-010c-4f72-8629-9f538579b760",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -67,6 +67,67 @@
 			"response": []
 		},
 		{
+			"name": "Create with Array Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "084343cd-b3e4-4be0-aa0f-3cd92af78808",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ok\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d74fc12a-5fa7-47b4-955c-a01041cf6fff",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "91bf6ab7-5b31-4ec9-99c6-d3fa5781cbef",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"{{username}}\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"{{lastName}}\",\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\",\n    \"phone\": \"{{phone}}\",\n    \"userStatus\": 0\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}/createWithArray"
+			},
+			"response": []
+		},
+		{
 			"name": "Create With List",
 			"event": [
 				{
@@ -87,7 +148,7 @@
 					}
 				}
 			],
-			"_postman_id": "cfceb993-628b-4cd1-a4bf-59e4f6806fa2",
+			"id": "cfceb993-628b-4cd1-a4bf-59e4f6806fa2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -107,8 +168,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"user2\",\n    \"firstName\": \"user\",\n    \"lastName\": \"2\",\n    \"email\": \"sujit.sqae@gmail.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01672744455\",\n    \"userStatus\": 0\n  }\n]\n\n",
-					"options": {}
+					"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"user2\",\n    \"firstName\": \"user\",\n    \"lastName\": \"2\",\n    \"email\": \"sujit.sqae@gmail.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01672744455\",\n    \"userStatus\": 0\n  }\n]\n\n"
 				},
 				"url": "{{URL}}/createWithList"
 			},
@@ -130,7 +190,7 @@
 					}
 				}
 			],
-			"_postman_id": "1b1171ca-50ef-4eca-9b26-20701aba58a7",
+			"id": "1b1171ca-50ef-4eca-9b26-20701aba58a7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -188,7 +248,7 @@
 					}
 				}
 			],
-			"_postman_id": "173c5c9f-9139-4c49-b9e9-ad0ad8c274ad",
+			"id": "173c5c9f-9139-4c49-b9e9-ad0ad8c274ad",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -208,8 +268,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"phone\": \"123456789\"\n}",
-					"options": {}
+					"raw": "{\n  \"phone\": \"123456789\"\n}"
 				},
 				"url": "{{URL}}/user1"
 			},
@@ -231,7 +290,7 @@
 					}
 				}
 			],
-			"_postman_id": "ebb473a4-52df-498d-83ee-18869b0068bc",
+			"id": "ebb473a4-52df-498d-83ee-18869b0068bc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -268,7 +327,7 @@
 					}
 				}
 			],
-			"_postman_id": "08023e8c-78ec-47fd-bb64-f1de14587e90",
+			"id": "08023e8c-78ec-47fd-bb64-f1de14587e90",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -319,7 +378,7 @@
 					}
 				}
 			],
-			"_postman_id": "b0c6ae43-e94b-4b83-9ce0-4d5a882f1e25",
+			"id": "b0c6ae43-e94b-4b83-9ce0-4d5a882f1e25",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -346,7 +405,7 @@
 					}
 				}
 			],
-			"_postman_id": "e17ec671-e2e7-4477-ba9f-850d11a884e3",
+			"id": "e17ec671-e2e7-4477-ba9f-850d11a884e3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -366,8 +425,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"id\": 0,\n  \"username\": \"Sujits\",\n  \"firstName\": \"Sujit\",\n  \"lastName\": \"sarker\",\n  \"email\": \"ss@gmail.com\",\n  \"password\": \"123456\",\n  \"phone\": \"123456789\",\n  \"userStatus\": 0\n}",
-					"options": {}
+					"raw": "{\n  \"id\": 0,\n  \"username\": \"Sujits\",\n  \"firstName\": \"Sujit\",\n  \"lastName\": \"sarker\",\n  \"email\": \"ss@gmail.com\",\n  \"password\": \"123456\",\n  \"phone\": \"123456789\",\n  \"userStatus\": 0\n}"
 				},
 				"url": "{{URL}}"
 			},
@@ -398,13 +456,13 @@
 	],
 	"variable": [
 		{
-			"id": "a77f9c13-e818-4c90-b364-28eff9d5341c",
+			"id": "6c1b12b2-d99b-400a-ae57-dd906b5af3e9",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "d6d8d529-48fa-4ddc-8084-1a14656487c6",
+			"id": "6b4d0fc1-c0d5-46ad-a7e2-6ca6a68d578e",
 			"value": "",
 			"type": "string",
 			"disabled": true
