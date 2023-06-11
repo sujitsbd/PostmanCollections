@@ -175,6 +175,53 @@
 			"response": []
 		},
 		{
+			"name": "Create With List from XML",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "760c8d17-b5c8-454d-b71a-13c2c221e07a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"ok\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "0914a849-7351-41f2-9acd-ac4f463ea38c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 0,\n    \"username\": \"user2\",\n    \"firstName\": \"user\",\n    \"lastName\": \"2\",\n    \"email\": \"sujit.sqae@gmail.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01672744455\",\n    \"userStatus\": 0\n  }\n]\n\n"
+				},
+				"url": "{{URL}}/createWithList"
+			},
+			"response": []
+		},
+		{
 			"name": "Get User by user name",
 			"event": [
 				{
@@ -456,13 +503,13 @@
 	],
 	"variable": [
 		{
-			"id": "7a433b7a-1bb8-4ac1-955a-1c32c11aa5e4",
+			"id": "1d44caa2-ca5e-4cab-b437-8432f9ffe470",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "0f9efcbd-8595-41ab-ae70-36354b97a65a",
+			"id": "a4c65d99-102e-41d3-836f-ced3fba53193",
 			"value": "",
 			"type": "string",
 			"disabled": true
