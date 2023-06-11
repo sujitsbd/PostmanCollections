@@ -80,6 +80,17 @@
 							"",
 							"pm.test(\"Body matches string\", function () {",
 							"    pm.expect(pm.response.text()).to.include(\"ok\");",
+							"});",
+							"",
+							"pm.test(\"Verifying user\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.value).to.eql(pm.iterationData.get(\"username\"));",
+							"    pm.expect(jsonData.value).to.eql(pm.iterationData.get(\"firstName\"));",
+							"    pm.expect(jsonData.value).to.eql(pm.iterationData.get(\"lastName\"));",
+							"    pm.expect(jsonData.value).to.eql(pm.iterationData.get(\"email\"));",
+							"    pm.expect(jsonData.value).to.eql(pm.iterationData.get(\"password\"));",
+							"    pm.expect(jsonData.value).to.eql(pm.iterationData.get(\"phone\"));",
+							"    ",
 							"});"
 						],
 						"type": "text/javascript"
@@ -503,13 +514,13 @@
 	],
 	"variable": [
 		{
-			"id": "8a14e435-f0c5-4fe5-9c10-e851fe0d2d64",
+			"id": "941ca681-32a5-4a6a-b90f-a741d94f6e55",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "c19e4e86-faba-4f68-8bce-4704bfca2703",
+			"id": "5d13e1e2-7df8-4972-ae1a-34772d94d53b",
 			"value": "",
 			"type": "string",
 			"disabled": true
