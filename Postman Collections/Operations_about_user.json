@@ -83,13 +83,13 @@
 							"});",
 							"",
 							"pm.test(\"Verifying user\", function () {",
-							"    const response = pm.response.json();",
-							"    pm.expect(response.json.username).to.eql(pm.iterationData.get(\"username\"));",
-							"    pm.expect(response.json.firstName).to.eql(pm.iterationData.get(\"firstName\"));",
-							"    pm.expect(response.json.lastName).to.eql(pm.iterationData.get(\"lastName\"));",
-							"    pm.expect(response.json.email).to.eql(pm.iterationData.get(\"email\"));",
-							"    pm.expect(response.json.password).to.eql(pm.iterationData.get(\"password\"));",
-							"    pm.expect(response.json.phone).to.eql(pm.iterationData.get(\"phone\"));",
+							"    var response = pm.response.json();",
+							"    pm.expect(response.username).to.eql(pm.iterationData.get(\"username\"));",
+							"    pm.expect(response.firstName).to.eql(pm.iterationData.get(\"firstName\"));",
+							"    pm.expect(response.lastName).to.eql(pm.iterationData.get(\"lastName\"));",
+							"    pm.expect(response.email).to.eql(pm.iterationData.get(\"email\"));",
+							"    pm.expect(response.password).to.eql(pm.iterationData.get(\"password\"));",
+							"    pm.expect(response.phone).to.eql(pm.iterationData.get(\"phone\"));",
 							"    ",
 							"    ",
 							"});",
@@ -521,13 +521,13 @@
 	],
 	"variable": [
 		{
-			"id": "474e89b1-f748-4dd1-9fbb-5c5811c44c30",
+			"id": "61f800a3-77f3-49b1-af16-2e25924c4a15",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "16b8b8d2-1df3-4d5e-8488-dbf92b04c012",
+			"id": "a0a670bb-af75-4082-8a8f-1a54fc631233",
 			"value": "",
 			"type": "string",
 			"disabled": true
