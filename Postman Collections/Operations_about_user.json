@@ -67,7 +67,7 @@
 			"response": []
 		},
 		{
-			"name": "Create with Array Copy",
+			"name": "Create with Array from CSV",
 			"event": [
 				{
 					"listen": "test",
@@ -456,13 +456,13 @@
 	],
 	"variable": [
 		{
-			"id": "6c1b12b2-d99b-400a-ae57-dd906b5af3e9",
+			"id": "7a433b7a-1bb8-4ac1-955a-1c32c11aa5e4",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "6b4d0fc1-c0d5-46ad-a7e2-6ca6a68d578e",
+			"id": "0f9efcbd-8595-41ab-ae70-36354b97a65a",
 			"value": "",
 			"type": "string",
 			"disabled": true
