@@ -382,13 +382,13 @@
 	],
 	"variable": [
 		{
-			"id": "abb5aca9-09ac-4dd0-af2f-91f6890080b1",
+			"id": "1a7695e5-8143-42fd-addb-bf608ece0254",
 			"key": "URL",
 			"value": "http://35.208.205.152:8000",
 			"type": "string"
 		},
 		{
-			"id": "18e2abe0-4443-4de6-bf9f-145f71399e43",
+			"id": "efe7cff0-7a41-42be-b58a-5d183ff94f00",
 			"key": "project_id",
 			"value": "",
 			"type": "string"
