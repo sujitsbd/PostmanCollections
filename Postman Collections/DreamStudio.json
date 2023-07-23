@@ -26,7 +26,7 @@
 					}
 				}
 			],
-			"_postman_id": "5f1e7272-19dc-4f3b-a524-e96460e62a0d",
+			"id": "5f1e7272-19dc-4f3b-a524-e96460e62a0d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -64,7 +64,7 @@
 					}
 				}
 			],
-			"_postman_id": "33d7bbbd-b6af-4b5f-ba57-b983bceb77cb",
+			"id": "33d7bbbd-b6af-4b5f-ba57-b983bceb77cb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -84,8 +84,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"device_id\": \"212\",\n  \"purchase_id\": \"211\",\n  \"dreams\": [\n    {\n      \"id\": \"T001_V001\",\n      \"class_name\": \"\",\n      \"prefix_of_instance_prompt\": \"\",\n      \"suffix_of_instance_prompt\": \" in meadow picking flowers poster\",\n      \"class_prompt\": \"Goku Dalai Lama in meadow picking flowers poster\",\n      \"negative_prompt\": \"bad anatomy, bad composition, ugly, abnormal, unrealistic, double, contorted, disfigured, malformed, amateur, extra, duplicate\",\n      \"seed\": 615110,\n      \"guidance_scale\": 7,\n      \"height\": 768,\n      \"width\": 512,\n      \"steps\": 50,\n      \"number_of_output_img\": 20\n    }\n  ]\n}",
-					"options": {}
+					"raw": "{\n  \"device_id\": \"212\",\n  \"purchase_id\": \"211\",\n  \"dreams\": [\n    {\n      \"id\": \"T001_V001\",\n      \"class_name\": \"\",\n      \"prefix_of_instance_prompt\": \"\",\n      \"suffix_of_instance_prompt\": \" in meadow picking flowers poster\",\n      \"class_prompt\": \"Goku Dalai Lama in meadow picking flowers poster\",\n      \"negative_prompt\": \"bad anatomy, bad composition, ugly, abnormal, unrealistic, double, contorted, disfigured, malformed, amateur, extra, duplicate\",\n      \"seed\": 615110,\n      \"guidance_scale\": 7,\n      \"height\": 768,\n      \"width\": 512,\n      \"steps\": 50,\n      \"number_of_output_img\": 20\n    }\n  ]\n}"
 				},
 				"url": "{{URL}}/projects"
 			},
@@ -118,7 +117,7 @@
 					}
 				}
 			],
-			"_postman_id": "deb2ec4a-f6e5-4b51-bc74-208246085cca",
+			"id": "deb2ec4a-f6e5-4b51-bc74-208246085cca",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -156,8 +155,7 @@
 							"type": "file",
 							"src": "/Users/kitegamesstudio/Documents/Postman Test Data/[Sujit_Sarker]-[Kite_Games _Studio_Ltd.]-Team2.jpg"
 						}
-					],
-					"options": {}
+					]
 				},
 				"url": {
 					"raw": "{{URL}}/upload-image/{{project_id}}",
@@ -201,7 +199,7 @@
 					}
 				}
 			],
-			"_postman_id": "c58b2a22-f598-40fb-9846-5d098b471369",
+			"id": "c58b2a22-f598-40fb-9846-5d098b471369",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -221,8 +219,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"dreams\": [\n    {\n      \"id\": \"T001_V001\",\n      \"class_name\": \"\",\n      \"prefix_of_instance_prompt\": \"\",\n      \"suffix_of_instance_prompt\": \" in meadow picking flowers poster\",\n      \"class_prompt\": \"Goku Dalai Lama in meadow picking flowers poster\",\n      \"negative_prompt\": \"bad anatomy, bad composition, ugly, abnormal, unrealistic, double, contorted, disfigured, malformed, amateur, extra, duplicate\",\n      \"seed\": 615110,\n      \"guidance_scale\": 7,\n      \"height\": 768,\n      \"width\": 512,\n      \"steps\": 50,\n      \"number_of_output_img\": 20\n    }\n  ]\n}",
-					"options": {}
+					"raw": "{\n  \"dreams\": [\n    {\n      \"id\": \"T001_V001\",\n      \"class_name\": \"\",\n      \"prefix_of_instance_prompt\": \"\",\n      \"suffix_of_instance_prompt\": \" in meadow picking flowers poster\",\n      \"class_prompt\": \"Goku Dalai Lama in meadow picking flowers poster\",\n      \"negative_prompt\": \"bad anatomy, bad composition, ugly, abnormal, unrealistic, double, contorted, disfigured, malformed, amateur, extra, duplicate\",\n      \"seed\": 615110,\n      \"guidance_scale\": 7,\n      \"height\": 768,\n      \"width\": 512,\n      \"steps\": 50,\n      \"number_of_output_img\": 20\n    }\n  ]\n}"
 				},
 				"url": {
 					"raw": "{{URL}}/upload-dreams/{{project_id}}",
@@ -268,7 +265,7 @@
 					}
 				}
 			],
-			"_postman_id": "e57e5cbc-d4ae-4bcb-8a37-351bf0cfacf8",
+			"id": "e57e5cbc-d4ae-4bcb-8a37-351bf0cfacf8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -288,8 +285,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {}
+					"raw": ""
 				},
 				"url": "{{URL}}/process-dream/{{project_id}}"
 			},
@@ -317,7 +313,7 @@
 					}
 				}
 			],
-			"_postman_id": "24854d4c-a914-4f37-aed2-c2238dae3988",
+			"id": "24854d4c-a914-4f37-aed2-c2238dae3988",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -350,7 +346,7 @@
 					}
 				}
 			],
-			"_postman_id": "ec98d1a6-7a8d-4790-ab99-158cd555d4a6",
+			"id": "ec98d1a6-7a8d-4790-ab99-158cd555d4a6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -386,13 +382,13 @@
 	],
 	"variable": [
 		{
-			"id": "fc78a335-891c-4312-be9e-4a81d27c2752",
+			"id": "ffa4c4ab-1711-418e-afec-93f401a6280c",
 			"key": "URL",
 			"value": "http://35.208.205.152:8000",
 			"type": "string"
 		},
 		{
-			"id": "c8154278-6be3-4c32-9883-a9f60461470c",
+			"id": "d2e52ca0-9b97-46a5-9192-bcd98ed0bcd3",
 			"key": "project_id",
 			"value": "",
 			"type": "string"
