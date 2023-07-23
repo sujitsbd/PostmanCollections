@@ -55,7 +55,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "[\n  {\n    //\"id\": 0,\n    \"username\": \"user11\",\n    \"firstName\": \"user\",\n    \"lastName\": \"1\",\n    \"email\": \"sujits.bd@gmail.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01723404174\",\n    \"userStatus\": 0\n  }\n]",
+					"raw": "[\n  {\n    //\"id\": 0,\n    \"username\": \"user1\",\n    \"firstName\": \"user\",\n    \"lastName\": \"1\",\n    \"email\": \"sujits.bd@gmail.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01723404174\",\n    \"userStatus\": 0\n  }\n]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -509,13 +509,13 @@
 	],
 	"variable": [
 		{
-			"id": "ce47c587-5675-4ae5-acbb-0f23c4acf269",
+			"id": "c8c48a4e-93c2-472b-a7c7-6a28fef4d1e8",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "b9ea3f5d-1ba9-4d34-9d7f-078ad60dd3d6",
+			"id": "416a1a60-3b1e-4704-983d-1b4e0acd11dd",
 			"value": "",
 			"type": "string",
 			"disabled": true
