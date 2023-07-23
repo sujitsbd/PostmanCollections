@@ -509,13 +509,13 @@
 	],
 	"variable": [
 		{
-			"id": "f862ad76-00fa-4988-aa2f-377252d4c74c",
+			"id": "ce47c587-5675-4ae5-acbb-0f23c4acf269",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "4cbffd4b-ca3c-4392-a7ea-907ac121e206",
+			"id": "b9ea3f5d-1ba9-4d34-9d7f-078ad60dd3d6",
 			"value": "",
 			"type": "string",
 			"disabled": true
