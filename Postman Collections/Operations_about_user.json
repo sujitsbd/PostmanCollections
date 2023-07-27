@@ -356,6 +356,10 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
 				"url": "{{URL}}/user1"
 			},
 			"response": []
@@ -509,13 +513,13 @@
 	],
 	"variable": [
 		{
-			"id": "d82bee70-1bf4-4a64-b834-90251e2e0d43",
+			"id": "b5974ae0-c6e0-4fd4-8242-19884ebbb575",
 			"key": "URL",
 			"value": "https://petstore.swagger.io/v2/user",
 			"type": "string"
 		},
 		{
-			"id": "47563955-99a4-400d-8913-4861d69c573c",
+			"id": "cc0b96af-d881-450e-949d-9485bc577942",
 			"value": "",
 			"type": "string",
 			"disabled": true
